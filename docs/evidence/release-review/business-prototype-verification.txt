@@ -1,0 +1,211 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] smart-vrms                                                         [pom]
+[INFO] contracts                                                          [jar]
+[INFO] application                                                        [jar]
+[INFO] desktop                                                            [jar]
+[INFO] server                                                             [jar]
+[INFO] 
+[INFO] ----------------------< in.smartvrms:smart-vrms >-----------------------
+[INFO] Building smart-vrms 0.1.0-SNAPSHOT                                 [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] -----------------------< in.smartvrms:contracts >-----------------------
+[INFO] Building contracts 0.1.0-SNAPSHOT                                  [2/5]
+[INFO]   from contracts\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ contracts ---
+[INFO] skip non existing resourceDirectory C:\Users\HP\Desktop\smart-VRMS\contracts\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ contracts ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ contracts ---
+[INFO] skip non existing resourceDirectory C:\Users\HP\Desktop\smart-VRMS\contracts\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ contracts ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ contracts ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ contracts ---
+[INFO] 
+[INFO] ----------------------< in.smartvrms:application >----------------------
+[INFO] Building application 0.1.0-SNAPSHOT                                [3/5]
+[INFO]   from application\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ application ---
+[INFO] skip non existing resourceDirectory C:\Users\HP\Desktop\smart-VRMS\application\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ application ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ application ---
+[INFO] skip non existing resourceDirectory C:\Users\HP\Desktop\smart-VRMS\application\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ application ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ application ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ application ---
+[INFO] 
+[INFO] ------------------------< in.smartvrms:desktop >------------------------
+[INFO] Building desktop 0.1.0-SNAPSHOT                                    [4/5]
+[INFO]   from desktop\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ desktop ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] The encoding used to copy filtered properties files has not been set. This means that the same encoding will be used to copy filtered properties files as when copying other filtered resources. This might not be what you want! Run your build with --debug to see which files might be affected. Read more at https://maven.apache.org/plugins/maven-resources-plugin/examples/filtering-properties-files.html
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ desktop ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ desktop ---
+[INFO] skip non existing resourceDirectory C:\Users\HP\Desktop\smart-VRMS\desktop\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ desktop ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ desktop ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ desktop ---
+[INFO] 
+[INFO] ------------------------< in.smartvrms:server >-------------------------
+[INFO] Building server 0.1.0-SNAPSHOT                                     [5/5]
+[INFO]   from server\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ server ---
+[INFO] skip non existing resourceDirectory C:\Users\HP\Desktop\smart-VRMS\server\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ server ---
+[INFO] skip non existing resourceDirectory C:\Users\HP\Desktop\smart-VRMS\server\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ server ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ server ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ server ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for smart-vrms 0.1.0-SNAPSHOT:
+[INFO] 
+[INFO] smart-vrms ......................................... SUCCESS [  0.002 s]
+[INFO] contracts .......................................... SUCCESS [  0.776 s]
+[INFO] application ........................................ SUCCESS [  0.044 s]
+[INFO] desktop ............................................ SUCCESS [  0.062 s]
+[INFO] server ............................................. SUCCESS [  0.088 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.063 s
+[INFO] Finished at: 2026-10-26T00:47:58+05:30
+[INFO] ------------------------------------------------------------------------
+PASS: 30 assertions; 17 Swing renders. Provider and device acceptance not tested.
+PASS: 237 server permission assertions. Live identity, database/RLS and Storage NOT verified.
+PASS: 80 Auth/config/JSON/HTTP checks. Fixture and loopback tests only; live Supabase NOT verified.
+Database setup input checks: 10 passed (no database connection attempted).
+PASS: 119 staff authorization JDBC fixture assertions. Live login/context reuse remain pending.
+PASS: 63 in-transaction staff-context assertions. No live database access.
+PASS: 20 prototype session/refresh/logout and hosted-bind checks. No live provider request.
+PASS: 7 actual fleet-adapter transaction ordering/audit escaping fixture checks. Live write acceptance still required.
+Oct 26, 2026 12:48:09 AM in.smartvrms.server.api.VrmsHttpServer start
+INFO: VrmsHttpServer started on http://127.0.0.1:51846
+Oct 26, 2026 12:48:09 AM in.smartvrms.server.api.VrmsHttpServer stop
+INFO: VrmsHttpServer stopped.
+PASS: 7 live-fleet desktop/API protocol and UI checks. Repository/Auth are fixtures; no live business write claimed.
+PASS: 3 approved-driver SCRAM/password-lifecycle checks. No provisioning or network request.
+PASS: 25 independent review regression assertions. Fixture HTTP only; no live business acceptance claimed.
+Starting Stage 2A integration checks...
+Oct 26, 2026 12:48:16 AM in.smartvrms.server.api.VrmsHttpServer start
+INFO: VrmsHttpServer started on http://127.0.0.1:51851
+Oct 26, 2026 12:48:16 AM in.smartvrms.server.api.VrmsHttpServer stop
+INFO: VrmsHttpServer stopped.
+PASS: 75 Stage 2A identity, session and protected application access assertions.
+Starting Stage 2B integration checks...
+Oct 26, 2026 12:48:19 AM in.smartvrms.server.api.VrmsHttpServer start
+INFO: VrmsHttpServer started on http://127.0.0.1:51854
+Oct 26, 2026 12:48:19 AM in.smartvrms.server.api.VrmsHttpServer stop
+INFO: VrmsHttpServer stopped.
+PASS: 74 Stage 2B shared security, storage, provisioning and audit assertions.
+Starting Stage 3 integration checks...
+Oct 26, 2026 12:48:22 AM in.smartvrms.server.api.VrmsHttpServer start
+INFO: VrmsHttpServer started on http://127.0.0.1:51856
+Oct 26, 2026 12:48:22 AM in.smartvrms.server.api.VrmsHttpServer stop
+INFO: VrmsHttpServer stopped.
+PASS: 91 Stage 3 connected records, personnel, fleet, driver, customer and UI assertions.
+Starting Stage 4 integration checks...
+Oct 26, 2026 12:48:25 AM in.smartvrms.server.api.VrmsHttpServer start
+INFO: VrmsHttpServer started on http://127.0.0.1:51859
+Oct 26, 2026 12:48:26 AM in.smartvrms.server.api.VrmsHttpServer stop
+INFO: VrmsHttpServer stopped.
+PASS: 79 Stage 4 pricing, package booking, concurrency, API, and UI assertions.
+Starting Stage 5 integration checks...
+Oct 26, 2026 12:48:29 AM in.smartvrms.server.api.VrmsHttpServer start
+INFO: VrmsHttpServer started on http://127.0.0.1:51861
+Oct 26, 2026 12:48:29 AM in.smartvrms.server.api.VrmsHttpServer stop
+INFO: VrmsHttpServer stopped.
+PASS: 66 Stage 5 running services, custody, return, extension, damage, API, and UI assertions.
+Starting Stage 6 integration checks...
+Oct 26, 2026 12:48:32 AM in.smartvrms.server.api.VrmsHttpServer start
+INFO: VrmsHttpServer started on http://127.0.0.1:51863
+Oct 26, 2026 12:48:32 AM in.smartvrms.server.api.VrmsHttpServer stop
+INFO: VrmsHttpServer stopped.
+PASS: 68 Stage 6 finance, payments, ledger, PDF, UPI QR, and UI assertions.
+Starting Stage 7 integration checks...
+Oct 26, 2026 12:48:35 AM in.smartvrms.server.api.VrmsHttpServer start
+INFO: VrmsHttpServer started on http://127.0.0.1:50877
+Oct 26, 2026 12:48:35 AM in.smartvrms.server.api.VrmsHttpServer stop
+INFO: VrmsHttpServer stopped.
+PASS: 71 Stage 7 automation, outbox, reviews, reporting, and privacy assertions.
+Starting Stage 8 end-to-end hardening and journey checks...
+Running Journey A: Full rental lifecycle...
+Running Journey B: Returning customer and multi-vehicle package...
+Running Journey C: Damaged return and maintenance surfacing...
+Running Journey D: Driver leave, Indian FY reporting, and privacy isolation...
+Running Journey E: Document reminder window and renewal superseding...
+Testing resilience, concurrency locks, and idempotency replay...
+Testing Disaster Recovery backup and restore drill (NFR-REC-001)...
+Running performance and capacity benchmarks (NFR-PERF-001)...
+QuoteEngine benchmark: 5000 calculations in 4ms (1023939.71 ops/sec, avg: 0.0010ms)
+JVM working heap memory under load: 12 MB
+Scanning repository files for credential leaks (NFR-SEC-001)...
+Inspecting native Swing layouts and keyboard focus (NFR-UI-001, NFR-UI-002)...
+PASS: 67 Stage 8 end-to-end hardening, Journeys A-E, backup/restore, capacity, security, and UI assertions.
+Starting Stage 9 hosting and native distribution checks...
+Testing public liveness health check probe...
+Oct 26, 2026 12:48:40 AM in.smartvrms.server.api.VrmsHttpServer start
+INFO: VrmsHttpServer started on http://127.0.0.1:50879
+Oct 26, 2026 12:48:40 AM sun.net.httpserver.ExchangeImpl sendResponseHeaders
+WARNING: sendResponseHeaders: being invoked with a content length for a HEAD request
+Oct 26, 2026 12:48:40 AM in.smartvrms.server.api.VrmsHttpServer stop
+INFO: VrmsHttpServer stopped.
+Testing platform user config directory and endpoint persistence...
+Testing DesktopConfig validation rules...
+Testing client package isolation and artifacts...
+Testing server deployment bundle and cloud specifications...
+Testing multi-platform packaging scripts...
+Validating platform support matrix and Gate G6 status...
+Native artifact directories present: macOS=false, Linux=false. Presence alone is not device acceptance; consult release evidence.
+PASS: 47 Stage 9 hosting, packaging, configuration, and platform distribution assertions.
+Starting Stage 10 release, documentation, and handover checks...
+Testing delivery checklist integrity...
+Testing release manifest and artifact SHA256 checksums...
+Testing documentation integrity and zero-leak compliance...
+Testing third-party notices and client isolation...
+Validating Gate G6 and Gate G7 compliance...
+PASS: 415 Stage 10 release, documentation, checksum, and handover assertions.

@@ -1,0 +1,13 @@
+.git
+**/target
+dist
+local-config
+.env*
+verification
+docs
+planning
+.github
+desktop/src
+**/*.key
+**/*.p12
+**/*.pfx

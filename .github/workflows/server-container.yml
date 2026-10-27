@@ -1,0 +1,25 @@
+name: Verify server container
+on:
+  push:
+    branches: [main]
+    paths: ['Dockerfile', '.dockerignore', 'server/**', 'contracts/**', 'application/**', 'deployment/**', 'pom.xml', '.github/workflows/server-container.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  container:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Build using preinstalled Docker
+        run: docker build --tag smart-vrms-server-check .
+      - name: Verify missing configuration fails closed
+        shell: bash
+        run: |
+          set +e
+          docker run --rm smart-vrms-server-check > container-startup.txt 2>&1
+          code=$?
+          set -e
+          cat container-startup.txt
+          test "$code" -eq 2
